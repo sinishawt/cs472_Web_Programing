@@ -46,3 +46,12 @@ dd {
     font-style: italic;
 }
 
+li > span {
+    font-weight: bold;
+}
+
+.lined {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
