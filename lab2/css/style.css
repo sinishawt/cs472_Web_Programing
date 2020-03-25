@@ -1,0 +1,58 @@
+body {
+    background-image: url("../images/bg.jpg");
+    color: azure;
+}
+
+h1 {
+    color: blue;
+}
+h2 {
+    color: blue;
+}
+
+p > strong {
+    color: yellow;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+  color: red;
+    text-decoration: none;
+}
+a:hover {
+  color: blue;
+    text-decoration: none;
+}
+
+.firstcharacter {
+  color: blue;
+  float: left;
+  font-family: Georgia;
+  font-size: 25px;
+  line-height: 10px;
+  padding-left: 3px;
+}
+
+dt {
+    color: yellow;
+    font-weight: bold;
+}
+
+ol.count-backwards
+{
+    list-style-type:none;
+}
+ol.count-backwards > li
+{
+    counter-increment:start-from -1;
+}
+ol.count-backwards > li:before
+{
+    content:counter(start-from) ". ";
+}
