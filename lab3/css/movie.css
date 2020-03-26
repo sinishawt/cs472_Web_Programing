@@ -1,0 +1,88 @@
+/* Style for TMNT - Rancid Tomatoes */
+* {
+
+}
+
+body {
+    background-image: url("../images/background.png");
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Picture */
+#header {
+    background-image: url("../images/bannerbg.png");
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Main Container Style */
+#mainContainer {
+    width: 960px;
+    margin: 0 auto;
+    border: 5px solid gray;
+    border-radius: 10px;
+    height: 900px;
+}
+
+/* title bar */
+#title {
+    text-align: center;
+    font-size: 24pt;
+    text-shadow: 3px 3px #999999;
+
+}
+
+#rightBar {
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 1px;
+    overflow: hidden;
+
+}
+
+#leftBar {
+
+}
+
+#insideTitleBar {
+    background-image: url("../images/rbg.png");
+    font-size: 48px;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+#twoColumns {
+    column-count: 2;
+    column-gap: 20px;
+    overflow: hidden;
+}
+
+.review .comment{
+    background-color: #E8DC9B;
+    font-weight: bold;
+    font-size: 8pt;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.review .comment img {
+    float: left;
+}
+
+#pageNumber {
+    background-color: #A2B964;
+    text-align: center;
+    float: bottom;
+}
