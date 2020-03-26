@@ -26,7 +26,7 @@ body {
     margin: 0 auto;
     border: 5px solid gray;
     border-radius: 10px;
-    height: 900px;
+    overflow: hidden;
 }
 
 /* title bar */
@@ -46,10 +46,12 @@ body {
     font-weight: bold;
     padding: 1px;
     overflow: hidden;
-
+    line-height: 1.8;
 }
 
+
 #leftBar {
+
 
 }
 
@@ -85,4 +87,14 @@ body {
     background-color: #A2B964;
     text-align: center;
     float: bottom;
+    clear: both;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clear {
+    clear: both;
 }
