@@ -22,11 +22,13 @@ body {
 
 /* Main Container Style */
 #mainContainer {
-    width: 960px;
+    width: 800px;
     margin: 0 auto;
     border: 5px solid gray;
     border-radius: 10px;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 550px 250px;
 }
 
 /* title bar */
@@ -60,6 +62,12 @@ body {
     font-size: 48px;
     color: red;
     font-weight: bold;
+    background-repeat: repeat-x;
+    height: 83px;
+}
+
+div {
+    display: block;
 }
 
 #twoColumns {
@@ -88,11 +96,6 @@ body {
     clear: both;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.clear {
-    clear: both;
+#validators {
+    float: right;
 }
