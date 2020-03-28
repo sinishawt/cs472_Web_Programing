@@ -1,0 +1,45 @@
+
+#mainContainer {
+    margin: 0 auto;
+    background-color: azure;
+    width: 900px;
+}
+
+#validators {
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.answer {
+    font-weight: bold;
+    color: red;
+}
+
+.clock {
+    margin: 0 auto;
+    width: 800px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.myClockDisplayStyle{
+    padding: 3px;
+    font-size: 80px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#mySessionDisplay {
+    position: fixed;
+    color: white;
+}
+
+#myDateDisplay {
+    font-size: 30px;
+    font-weight: bold;
+}
