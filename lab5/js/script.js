@@ -216,6 +216,11 @@ document.getElementById("q13").innerHTML = printFibo(6, 0, 1);
 
 //Q14
 
+/*
+a. https://sinishawt.github.io/cs472_Web_Programing/lab4/webform1/index.html?
+b. https://sinishawt.github.io/cs472_Web_Programing/lab4/webform2/index.html?
+
+*/
 
 //Q15
 function showTime() {
