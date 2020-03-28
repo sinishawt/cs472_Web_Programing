@@ -130,21 +130,15 @@ document.getElementById("q8").innerHTML = computeSumOfSquares(squares);
 
 //Q9
 
-let odds = [87, 5, 7, 2, 6, 1, 9, 33, 24, 15]
+let odds = [7, 5, 7, 2, 6, 1, 9, 33, 24, 15]
 
 function printOddNumbersOnly(arr) {
-    let oddArr = [];
-    let counter = 0;
 
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] % 2 !== 0){
-            console.log(arr[i]);
-            oddArr[counter] = arr[i];
-            counter++;
-        }
-    }
+    const oddNumbers = arr.filter(function (value) {
+        return value % 2 !== 0;
+    })
 
-    return oddArr.toString();
+    return oddNumbers;
 }
 
 document.getElementById("q9").innerHTML = printOddNumbersOnly(odds);
@@ -154,15 +148,22 @@ document.getElementById("q9").innerHTML = printOddNumbersOnly(odds);
 let evens = [1, 2, 3, 4, 5];
 
 function computeSumOfSquaresOfEvensOnly(arr) {
-    let sum = 0;
+    //let res = 0;
 
-    for (let i = 0; i < arr.length; i++){
-        if(arr[i] % 2 === 0){
-            sum += arr[i] * arr[i];
-        }
-    }
+    // for (let i = 0; i < arr.length; i++){
+    //     if(arr[i] % 2 === 0){
+    //         sum += arr[i] * arr[i];
+    //     }
+    // }
 
-    return sum;
+    const evenNums = arr.filter(function (value) {
+        return value % 2 ===0;
+    })
+
+    const res = evenNums.map(elem => elem * elem);
+    const reducer = (sum, val) => sum + val;
+
+    return res.reduce(reducer);
 }
 
 document.getElementById("q10").innerHTML = computeSumOfSquaresOfEvensOnly(evens);

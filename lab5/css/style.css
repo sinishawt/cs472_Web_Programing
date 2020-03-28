@@ -32,6 +32,7 @@ h1 {
     padding: 3px;
     font-size: 80px;
     font-family: 'Orbitron', sans-serif;
+    text-shadow: 2px 2px 8px dodgerblue;
 }
 
 #mySessionDisplay {
@@ -42,4 +43,5 @@ h1 {
 #myDateDisplay {
     font-size: 30px;
     font-weight: bold;
+    text-shadow: 2px 2px 8px dodgerblue;
 }
