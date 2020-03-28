@@ -59,11 +59,15 @@ body {
 
 #insideTitleBar {
     background-image: url("../images/rbg.png");
-    font-size: 48px;
-    color: red;
-    font-weight: bold;
     background-repeat: repeat-x;
     height: 83px;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+    font-size: 48pt;
+    vertical-align: bottom;
 }
 
 div {
@@ -112,9 +116,13 @@ p > img {
     background-color: #A2B964;
     text-align: center;
     float: bottom;
-    clear: both;
 }
+
 
 #validators {
     float: right;
+}
+
+.Footer {
+    background-color: #a2b964;
 }
