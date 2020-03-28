@@ -1,3 +1,7 @@
+//READ ME
+//To view the output of the Scripts Please use the git link below
+// GIT LINK FOR THIS ASSIGNEMNT
+// https://sinishawt.github.io/cs472_Web_Programing/lab5/
 
 //Q1
 
