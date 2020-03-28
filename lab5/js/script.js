@@ -152,13 +152,6 @@ document.getElementById("q9").innerHTML = printOddNumbersOnly(odds);
 let evens = [1, 2, 3, 4, 5];
 
 function computeSumOfSquaresOfEvensOnly(arr) {
-    //let res = 0;
-
-    // for (let i = 0; i < arr.length; i++){
-    //     if(arr[i] % 2 === 0){
-    //         sum += arr[i] * arr[i];
-    //     }
-    // }
 
     const evenNums = arr.filter(function (value) {
         return value % 2 ===0;
