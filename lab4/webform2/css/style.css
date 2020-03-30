@@ -1,0 +1,63 @@
+body{
+    background-color: dodgerblue;
+    font-family: Georgia, Arial, Serif;
+    color: dodgerblue;
+}
+#homeContainer {
+    width: 400px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: azure;
+    border-radius: 15px 50px;
+}
+h1 {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    text-align: center;
+}
+
+#webformbuttons, #validators {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.button {
+    color: white;
+    background-color: dodgerblue;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+}
+
+.button:hover {
+    background-color: cornflowerblue;
+}
+
+#validators {
+    margin: 60px 0 10px;
+}
+
+#buttonswf2 {
+    float: right;
+}
+
+.vl {
+    border-left: 1px solid white;
+
+}
+
+.headder {
+    padding: 20px 0 20px 0;
+    font-size: 25px;
+}
+
+#whiteText {
+    color: white;
+    padding: 0 10px;
+}

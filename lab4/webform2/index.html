@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Web Form 2</title>
     <link rel="icon" href="../images/favicon.ico" type="image/ico">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -33,10 +33,10 @@
                         <a class="nav-link" href="#">Suppliers</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <label id="whitetext">Hello!</label>
-                    <button class="btn btn-light" type="submit">Submit</button>
-                </form>
+
+                    <label id="whiteText">Hello!</label>
+                    <button class="btn btn-light" type="submit" onclick="webForm2()">Submit</button>
+
             </div>
         </nav>
 
@@ -51,8 +51,8 @@
                 <div class="col-sm-6">
                     <form action="#">
                         <div class="form-group">
-                            <label for="prodname">Product Number</label>
-                            <input type="text" id="prodname" class="form-control">
+                            <label for="prodName">Product Number</label>
+                            <input type="text" id="prodName" class="form-control">
                         </div>
 
                         <div class="form-group">
@@ -61,8 +61,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="unitp">Unit Price</label>
-                            <input type="number" id="unitp" class="form-control" value="0.0">
+                            <label for="unitP">Unit Price</label>
+                            <input type="number" id="unitP" class="form-control" value="0.0">
                         </div>
                     </form>
                 </div>
@@ -106,6 +106,26 @@
             <a href="https://validator.w3.org/check/referer"><img src="../images/w3c-html.png" alt="Valid HTML5" /></a>
             <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="../images/w3c-css.png" alt="Valid CSS" /></a>
         </div>
+
+            <div class="popup">
+
+            </div>
+
         </div>
+
+        <script>
+            function webForm2() {
+                const prodName = document.getElementById("prodName").value;
+                const name = document.getElementById("name").value;
+                const unitP = document.getElementById("unitP").value;
+                const quantityInStock = document.getElementById("quantityInStock").value;
+                const Supplier = document.getElementById("Supplier").value;
+                const dateSup = document.getElementById("dateSup").value;
+
+                window.alert("Product Name: " + prodName + " \nName: " + name + " \nUnit Price: " + unitP + " \nQuantity In Stock: " + quantityInStock + " \nSupplier: " + "\nDate: " + dateSup);
+
+
+            }
+        </script>
     </body>
 </html>
