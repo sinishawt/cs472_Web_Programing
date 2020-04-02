@@ -1,3 +1,29 @@
+//Question 6 and 8
+const count = {
+    counter: 0,
+    make_adder: function(inc) {
+        return this.counter += inc;
+    },
+    add: function() {
+        return this.counter += 1;
+    },
+    reset: function(){
+        return this.counter = 0;
+    }
+};
+console.log(count.add()); //1
+
+console.log(count.add()); //2
+
+console.log(count.make_adder(8));//10
+
+console.log(count.make_adder(8));//18
+
+console.log(count.make_adder(8));//26
+
+console.log(count.reset()); //0
+
+// Question 11
 const Employee = (function() {
     //private
     let name;
