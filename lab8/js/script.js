@@ -23,7 +23,7 @@ console.log(count.make_adder(8));//26
 
 console.log(count.reset()); //0
 
-// Question 11
+// Question 10
 const Employee = (function() {
     //private
     let name;
@@ -77,18 +77,7 @@ console.log(Employee.incrementAge()); //33
 Employee.setSalary(1024);
 console.log(Employee.increaseSalary(50)); //1536
 
-// Employee.extension = function () {
-//     let address;
-//
-//     const setAddress = function (newAddress) {
-//         address = newAddress;
-//     }
-//
-//     const getAddress = function () {
-//         return address;
-//     }
-//
-// };
+//question 11
 
 
 Employee.address;
