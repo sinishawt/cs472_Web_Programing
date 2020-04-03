@@ -11,7 +11,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
     <body>
-
+    <form action="#" id="form">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="#">MUM Golden Dome Market : : : SRM System</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,8 @@
                 </ul>
 
                     <label id="whiteText">Hello!</label>
-                    <button class="btn btn-light" type="submit" onclick="webForm2()">Submit</button>
+                    <input type="submit" class="btn btn-light" value="Submit">
+                   <!-- <button class="btn btn-light" type="submit" onclick="webForm2()">Submit</button> -->
 
             </div>
         </nav>
@@ -49,28 +50,28 @@
 
             <div class="row">
                 <div class="col-sm-6">
-                    <form action="#">
+
                         <div class="form-group">
                             <label for="prodName">Product Number</label>
-                            <input type="text" id="prodName" class="form-control">
+                            <input name="productNumber" type="text" id="prodName" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" class="form-control">
+                            <input name="name" type="text" id="name" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="unitP">Unit Price</label>
-                            <input type="number" id="unitP" class="form-control" value="0.0">
+                            <input name="number" type="number" id="unitP" class="form-control" value="0.0">
                         </div>
-                    </form>
+
                 </div>
                 <div class="col-sm-6">
-                    <form action="#">
+
                         <div class="form-group">
                             <label for="quantityInStock">Quantity in stock</label>
-                            <input type="number" id="quantityInStock" class="form-control" value="0">
+                            <input name="qty" type="number" id="quantityInStock" class="form-control" value="0">
                         </div>
 
                         <div class="form-group">
@@ -86,7 +87,7 @@
 
                         <div class="form-group">
                             <label for="dateSup">Date supplied</label>
-                            <input type="date" id="dateSup" class="form-control">
+                            <input name="date" type="date" id="dateSup" class="form-control">
                             <small id="dateinfo" class="form-text text-muted">Enter a valid Date.</small>
                         </div>
 
@@ -96,8 +97,9 @@
                             <input type="submit" name="Add" id="addProduct" value="Add Product" class="btn btn-outline-primary">
                         </div>
 
-                    </form>
+
                 </div>
+            </div>
 
 
             </div>
@@ -112,8 +114,26 @@
             </div>
 
         </div>
-
+    </form>
         <script>
+
+            //Disable Page Reload
+            $("#form").submit(function(e) {
+                e.preventDefault();
+            });
+
+            //console log input field values
+            $("form").submit(function(){
+                const productNumber = $('input[name="productNumber"]').val();
+                const Name = $('input[name="name"]').val();
+                const unitPrice = $('input[name="number"]').val();
+                const quantityInStock = $('input[name="qty"]').val();
+                const Supplier = $('input[name="sup"]').val();
+                const dateSupplied = $('input[name="date"]').val();
+                console.log("Product Number: " + productNumber + "\n Name: " + Name + "\n UnityPrice: " + unitPrice + "\n quantityInStock" + quantityInStock + "\n Supplier:" + Supplier +
+                 "\n Date Supplied " + dateSupplied);
+            });
+
             function webForm2() {
                 const prodName = document.getElementById("prodName").value;
                 const name = document.getElementById("name").value;
