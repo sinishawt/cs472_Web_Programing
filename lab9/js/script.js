@@ -18,10 +18,10 @@ const person = {
 
 let john = Object.create(person);
 john.setName("John");
-john.dateOfBirth = "1998-12-10";
+john.dateOfBirth = new Date("1998-12-10");
 
 console.log("The Persons name is: " + john.getName());
-console.log(john.name + " was born in " + john.dateOfBirth);
+console.log(john.name + " was born in " + john.dateOfBirth.getFullYear() + "-" + john.dateOfBirth.getMonth()+"-"+john.dateOfBirth.getDay());
 
 //Question 2
 
@@ -30,22 +30,23 @@ Employee = {
     salary: 0,
     hireDate: Date.now(),
     doJob: function (jobTitle) {
-        console.log(Employee.name + " is a " + jobTitle + " who earns S" + this.salary);
+        console.log(this.name + " is a " + jobTitle + " who earns S" + this.salary);
     }
 };
 
-Employee.name = "Anna";
-Employee.salary = 249995.50;
-Employee.doJob("Programmer");
+const anna = Object.create(Employee);
+anna.name =  "Anna";
+anna.salary = 249995.50;
+anna.doJob("Programmer");
 
 //Question 3
 
-function Person(name, dob) {
+function Person(name, dateOfBirth) {
     this.name = name;
-    this.dob = dob;
+    this.dateOfBirth = dateOfBirth;
 
     this.toString = function () {
-        console.log("{Name: " + this.name + ", DateOfBirth: " + this.dob + "}");
+        console.log("{Name: " + this.name + ", DateOfBirth: " + this.dateOfBirth + "}");
     };
 }
 
