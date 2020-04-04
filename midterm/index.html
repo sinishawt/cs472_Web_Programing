@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/ico">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="js/script.js" defer></script>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">MUM Golden Dome Market : : : SRM System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="vl"></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+
+                    <li class="vl"></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Support Center</a>
+                    </li>
+                </ul>
+
+                <label id="whiteText">Hello!</label>
+                <input type="submit" class="btn btn-light" value="Submit">
+                <!-- <button class="btn btn-light" type="submit" onclick="webForm2()">Submit</button> -->
+
+            </div>
+        </nav>
+
+        <div id="mainContainer" class="container">
+            <h1>Bank Account Form</h1>
+
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="accountNo">Account No</label>
+                    <input type="number" id="accountNo" name="AccountNumber" placeholder="01-XXX-XXXX" class="form-control">
+                    <small>Your Unique Account Number</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" id="customerName" placeholder="e.g. John B Smith" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="typeOfAccount">Type of Account</label>
+                    <select name="typeOfAccount" id="typeOfAccount" class="form-control">
+                        <option value="Account not Selected" selected>Select An Account</option>
+                        <option value="Checking">Checking</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Debit">Debit</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Create New Account" id="submitButton" class="btn btn-primary">
+            </form>
+
+            <br>
+
+            <div>
+                <ul class="list-group" id="listOfAcc">
+                    <li class="list-group-item active">List of Customer Accounts</li>
+                    <li class="list-group-item">45-852-5567 | Anna Hernadez-Diaz | Checking</li>
+                    <li class="list-group-item">01-559-0001 | James H. Karvil | Savings</li>
+                </ul>
+            </div>
+            <div id="validators">
+                <a href="https://validator.w3.org/check/referer"><img src="images/w3c-html.png" alt="Valid HTML5" /></a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="images/w3c-css.png" alt="Valid CSS" /></a>
+                <a href="http://mumstudents.org/jshint/referer.php"><img src="images/jshint-small.png" alt="Valid JS"/></a>
+            </div>
+        </div>
+    </body>
+</html>

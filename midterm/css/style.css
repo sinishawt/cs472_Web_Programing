@@ -1,0 +1,20 @@
+body{
+    background-color: dodgerblue;
+    font-family: Georgia, Arial, Serif;
+    color: dodgerblue;
+}
+#mainContainer {
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: azure;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#validators {
+    margin: 60px 0 10px;
+    text-align: center;
+}
