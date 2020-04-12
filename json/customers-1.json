@@ -1,0 +1,22 @@
+[
+  {
+    "accountNo": "02-222-4155",
+    "customerName" : "Anna Hernadez-Diaz",
+    "accountType": "Savings"
+  },
+  {
+    "accountNo": "76-432-0945",
+    "customerName" : "James H. Karvil",
+    "accountType": "Checking"
+  },
+  {
+    "accountNo": "66-785-1475",
+    "customerName" : "Kebede R Gebriel",
+    "accountType": "Loan"
+  },
+  {
+    "accountNo": "44-785-2596",
+    "customerName" : "Ali K Jo",
+    "accountType": "Savings"
+  }
+]
