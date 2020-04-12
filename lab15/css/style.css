@@ -1,0 +1,35 @@
+
+
+.vl {
+    border-left: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#whiteText {
+    color: white;
+    padding: 0 10px;
+}
+
+.headingText {
+    color: dodgerblue;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+#addNewBook {
+    float: right;
+   margin: 10px;
+}
+
+#buttons {
+    text-align: right;
+}
+
+#alert {
+    display: none;
+}
+
+#alert2 {
+    display: none;
+}
